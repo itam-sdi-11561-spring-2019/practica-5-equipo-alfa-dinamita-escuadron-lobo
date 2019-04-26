@@ -1,7 +1,7 @@
 #include <ros/ros.h>
 
 #include <iostream>
-#include <std_msgs/Int32.h>
+#include <std_msgs/String.h>
 
 using namespace std;
 
@@ -12,10 +12,10 @@ int main(int argc, char **argv)
 	ROS_INFO_STREAM("ejemplo_pub_node initialized");																																							
 	ROS_INFO_STREAM(ros::this_node::getName());
 
-	ros::Publisher pub = nh.advertise<std_msgs::Int32> ("/msg_ejemplo", 1);
+	ros::Publisher pub = nh.advertise<std_msgs::String> ("/msg_ejemplo", 1);
 
-	std_msgs::Int32 msg;
-	int num; 
+	std_msgs::String msg;
+	string num; 
 		
 	while (ros::ok())
 	{

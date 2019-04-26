@@ -1,14 +1,14 @@
 #include <ros/ros.h>
 
 #include <iostream>
-#include <std_msgs/Int32.h>
+#include <std_msgs/String.h>
 
 #define RATE_HZ 2
 
 using namespace std;
-int num = -1;
+string num = "";
 
-void get_msg(const std_msgs::Int32& msg) {
+void get_msg(const std_msgs::String& msg) {
 	num = msg.data;
 	ROS_INFO_STREAM("Valor recibido: " << num);
 }
