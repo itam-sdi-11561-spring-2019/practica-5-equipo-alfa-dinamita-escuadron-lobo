@@ -1,2 +1,4 @@
 # PM_pract_5
-Archivos iniciales para la práctica 5 (ROS) Principios de Mecatrónica
+
+Notas:
+1. Es necesario correr: 'mv turtle_teleop_key.cpp src/ros_tutorials/turtlesim/tutorials'
